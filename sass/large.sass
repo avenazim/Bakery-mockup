@@ -1,0 +1,94 @@
+@import "./_variables.sass"
+
+nav
+    
+    .navbar-toggler
+        outline: none
+        z-index: 10
+
+    .navbar-collapse
+        transform: none
+
+        &.show
+            transform: none
+
+        &.collapse
+            position: relative
+            background-color: unset
+            padding: unset
+            height: auto
+            max-width: 100%
+
+
+#portfolio
+    .carousel-item
+        position: relative
+        height: 600px
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+
+        .carousel-indicated
+            padding-bottom: 20px
+
+        .carousel-caption
+            position: absolute
+            left: 0
+            right: 0
+            padding: 40px 0
+            background-color: rgba(0,0,0,.8)
+
+#prices
+    .price-info
+        font-size: 1.15rem
+
+@media (min-width: 1200px)
+    nav a
+        color: #fff
+
+    header
+        color: #fff
+
+        .hero-img
+            background-image: url('../img/cupcakeBG2.png')
+            background-position: left center
+            background-attachment: fixed
+
+        .hero-shadow
+            background-color: rgba(0,0,0,0.4)
+
+        .btn 
+            color: #fff
+            border: 2px solid #fff
+
+    .our-specials
+        .jumbotron
+            padding: 120px 0
+
+@media (min-width: 1500px)
+    nav
+        background-color: rgba(0,0,0,0.2)
+
+        a 
+            color: $tertiary
+
+    header
+        color: $secondary
+        font-family: 'Charmonman', cursive
+
+        .hero-text
+            position: absolute
+            right: 5%
+            max-width: 50%
+
+            h1
+                text-transform: none
+
+        .hero-shadow
+            background-color: unset
+
+        .btn 
+            color: $primary
+            border: 2px solid $primary

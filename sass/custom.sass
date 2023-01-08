@@ -1,0 +1,397 @@
+@import "./_variables.sass"
+
+@sidebar-width: 250px
+@sidebar-transition-duration : 500ms
+@sidebar-transition-easing : ease
+@sidebar-transition: $sidebar-transition-duration $sidebar-transition-easing
+
+*, *::after, *::before
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+body
+    position: relative
+    font-family: 'Montserrat', sans-serif
+    background-color: #fff
+    max-width: 1920px
+    margin: 0 auto
+
+.white-text
+    color: #fff
+
+.primary-text
+    color: $primary
+
+.wrapper
+    width: 80%
+    max-width: 2560px
+    margin: 0 auto
+
+h2
+    text-transform: uppercase
+    text-align: center
+
+.underline
+    margin: 0 auto 40px
+    width: 60px
+    height: 4px
+    background-color: $primary
+
+.scroll-fix::before
+    content: ''
+    display: block
+    height: 66px
+    margin-top: -66px
+
+
+.visibility
+    visibility: hidden
+
+.jumbotron
+    margin-bottom: 0
+
+//NAVIGATION
+nav
+    max-width: 1920px
+    margin: 0 auto
+    text-transform: uppercase
+    transition: background-color .6s
+
+    a, i
+        color: $primary
+        transition: color .3s
+    a:hover
+        color: $secondary
+    i
+        padding: 10px
+    .navbar-brand
+        font-weight: bold
+
+    .navbar-toggler
+        outline: none
+        z-index: 10
+
+    .navbar-collapse
+        transform: translateX(200%)
+        transition: transform .3s
+
+        &.show
+            transform: translateX(0%)
+
+        &.collapse
+            max-width: 170px
+            height: 100vh
+            position: absolute
+            top: 0
+            right: 0
+            padding: 50px 10px
+            background-color: rgba($tertiary, .9)
+
+    .active
+        color: $primary
+        font-weight: 600
+
+.shadow-bg
+    background-color: rgba(0,0,0,.8)
+
+//HEADER
+header
+    color: #fff
+    overflow: hidden
+
+    .hero-img
+        position: relative
+        height: 100vh
+        background-image: url('../img/muffin-blue-small.jpg')
+        background-position: center center
+        background-size: cover
+        z-index: 0
+
+    .hero-shadow
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,0.7)
+        z-index: -10
+
+    .hero-text
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        flex-direction: column
+        height: 100%
+
+        h1
+            text-transform: uppercase
+            font-size: 1.6rem
+            padding: 10px
+        p
+            font-size: .9rem
+            padding: 10px
+
+    .btn
+        margin-top: 50px
+        animation: bounce 2s .8s infinite
+        border: 2px solid $primary
+        color: $primary
+
+        &:hover
+            border-color: $secondary
+            color: $secondary
+
+//MAIN
+#about-us
+    .jumbotron
+        margin-bottom: 0 !important
+        background-color: rgba($primary , .1)
+    i
+        margin-top: 20px
+        font-size: 1.8rem
+    h3
+        text-transform: uppercase
+        font-size: 1.1rem
+    p
+        font-size: 1rem
+
+.aboutus-hover
+    transition: color .3s
+
+.aboutus-hover:hover
+    color: $quaternary
+
+#our-specials
+    margin-bottom: 0
+    color: #ddd
+
+    .jumbotron
+        position: relative
+        padding: 60px 0
+        background-image: url('../img/bday_cake_small.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+
+        h2
+            font-size: 2rem
+        i
+            font-size: 2.1rem
+        p
+            font-size: 0.9rem
+
+    .our-specials-shadow
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.7)
+        z-index: -10
+
+    .our-specials-item
+        margin: 10px 0
+
+//PORTFOLIO
+#portfolio
+    .jumbotron
+        background-color: rgba($primary , .1)
+
+    .carousel-item
+        position: relative
+        height: 600px
+
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+
+        .carousel-indicated
+            padding-bottom: 20px
+
+        .carousel-caption
+            position: absolute
+            left: 0
+            right: 0
+            padding: 40px 0
+            background-color: rgba(0,0,0,.8)
+
+//PRICES
+#prices
+    .wrapper
+        padding: 60px 0
+
+        .price-box
+            padding: 50px 20px
+            box-shadow: 0 0 15px 2px rgba(0, 0, 0, .1)
+            border-radius: 15px
+            margin-bottom: 50px
+            transition: transform .3s ease-out
+
+            &:hover
+                box-shadow: 0 0 15px 2px rgba($secondary,.5)
+                transform: scale(1.05)
+                cursor: pointer
+
+            h3
+                text-transform: uppercase
+                color: $secondary
+
+            span
+                font-weight: 600
+                color: $quaternary
+
+            button
+                padding: 10px 20px
+                text-transform: uppercase
+
+    .active
+        box-shadow: 0 0 15px 2px rgba($primary,.5)
+        background-color: $tertiary
+        color: $primary
+        h3
+            color: $primary
+        span
+            color: $primary
+
+    a
+        text-decoration: none
+        color: $secondary
+
+        &:hover
+            font-weight: 600
+
+    .price-info
+        margin: 30px 0 20px
+
+//TEAM
+.team
+    .jumbotron
+        position: relative
+        background-image: url('../img/team/team_bg.jpg')
+        background-size: cover
+        background-attachment: fixed
+        padding: 60px 0
+
+        .team-shadow
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(0,0,0,.3)
+
+        h2
+            color: #fff
+
+        .underline
+            background-color: #fff
+
+        .card
+            transition: transform .3s
+
+            img
+                height: 300px
+                object-fit: contain
+                background-color: $tertiary
+
+            .card-title
+                text-align: center
+                text-transform: uppercase
+
+            i
+                color: $secondary
+                padding: 10px
+
+            &:hover
+                transform: scale(.95)
+//BOTTOM-BANNER
+.bottom-baner
+    padding: 60px 0
+    background-color: $secondary
+
+    h2
+        font-family: 'Charmonman', sans-serif
+        color: $primary
+        font-weight: bold
+//CONTACT
+.contact
+
+    .jumbotron
+        position: relative
+        padding: 60px 0
+        background-image: url('../img/contactBG.jpg')
+        background-position: center bottom
+        background-attachment: fixed
+        background-size: cover
+        z-index: 0
+
+        .contact-shadow
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(27,0,7,.5)
+            z-index: -5
+        h2
+            color: $light-gray
+            font-weight: bold
+
+        .underline
+            background-color: $light-gray
+
+        .contact-us
+            display: flex
+            color: #fff
+            align-items: center
+
+            .contact-item
+                margin: 30px 0
+
+                h3
+                    margin-bottom: 15px
+                    text-transform: uppercase
+                    letter-spacing: 2px
+
+            .social-media
+                font-size: 26px
+
+                a
+                    padding: 10px
+                    color: #fff
+                    transition: transform .3s
+
+                    &:hover
+                        color: $primary
+
+footer
+    background-color: #000
+    color: $light-gray
+
+    p i
+        color: $primary
+
+
+@media (min-width: 375px)
+    header
+        .hero-text
+            h1
+                font-size: 2.2rem
+            p
+                font-size: 1rem
+
+    #aboutus-hero
+        .jumbotron
+            h2
+                font-size: 2.2rem
+            h3
+                font-size: 2rem
+            p
+                font-size: 1.1rem
+
+@media (min-width: 414px)
+    #aboutus-hero
+        .jumbotron
+            padding: 80px 0

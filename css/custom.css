@@ -1,0 +1,518 @@
+@sidebar-width : 250px;
+@sidebar-transition-duration : 500ms;
+@sidebar-transition-easing : ease;
+@sidebar-transition : $sidebar-transition-duration $sidebar-transition-easing;
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.primary-text {
+  color: #c765a5;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #c765a5;
+}
+
+.scroll-fix::before {
+  content: '';
+  display: block;
+  height: 66px;
+  margin-top: -66px;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+nav {
+  max-width: 1920px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+}
+
+nav a, nav i {
+  color: #c765a5;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav a:hover {
+  color: #ffc8e4;
+}
+
+nav i {
+  padding: 10px;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav .navbar-toggler {
+  outline: none;
+  z-index: 10;
+}
+
+nav .navbar-collapse {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+nav .navbar-collapse.show {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+nav .navbar-collapse.collapse {
+  max-width: 170px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 50px 10px;
+  background-color: rgba(215, 251, 255, 0.9);
+}
+
+nav .active {
+  color: #c765a5;
+  font-weight: 600;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+  color: #fff;
+  overflow: hidden;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/muffin-blue-small.jpg");
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+header .hero-text h1 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 10px;
+}
+
+header .hero-text p {
+  font-size: .9rem;
+  padding: 10px;
+}
+
+header .btn {
+  margin-top: 50px;
+  -webkit-animation: bounce 2s .8s infinite;
+          animation: bounce 2s .8s infinite;
+  border: 2px solid #c765a5;
+  color: #c765a5;
+}
+
+header .btn:hover {
+  border-color: #ffc8e4;
+  color: #ffc8e4;
+}
+
+#about-us .jumbotron {
+  margin-bottom: 0 !important;
+  background-color: rgba(199, 101, 165, 0.1);
+}
+
+#about-us i {
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+
+#about-us h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+#about-us p {
+  font-size: 1rem;
+}
+
+.aboutus-hover {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.aboutus-hover:hover {
+  color: #5ce4e4;
+}
+
+#our-specials {
+  margin-bottom: 0;
+  color: #ddd;
+}
+
+#our-specials .jumbotron {
+  position: relative;
+  padding: 60px 0;
+  background-image: url("../img/bday_cake_small.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+#our-specials .jumbotron h2 {
+  font-size: 2rem;
+}
+
+#our-specials .jumbotron i {
+  font-size: 2.1rem;
+}
+
+#our-specials .jumbotron p {
+  font-size: 0.9rem;
+}
+
+#our-specials .our-specials-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
+}
+
+#our-specials .our-specials-item {
+  margin: 10px 0;
+}
+
+#portfolio .jumbotron {
+  background-color: rgba(199, 101, 165, 0.1);
+}
+
+#portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+#portfolio .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#portfolio .carousel-item .carousel-indicated {
+  padding-bottom: 20px;
+}
+
+#portfolio .carousel-item .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#prices .wrapper {
+  padding: 60px 0;
+}
+
+#prices .wrapper .price-box {
+  padding: 50px 20px;
+  -webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 50px;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+#prices .wrapper .price-box:hover {
+  -webkit-box-shadow: 0 0 15px 2px rgba(255, 200, 228, 0.5);
+          box-shadow: 0 0 15px 2px rgba(255, 200, 228, 0.5);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+#prices .wrapper .price-box h3 {
+  text-transform: uppercase;
+  color: #ffc8e4;
+}
+
+#prices .wrapper .price-box span {
+  font-weight: 600;
+  color: #5ce4e4;
+}
+
+#prices .wrapper .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#prices .active {
+  -webkit-box-shadow: 0 0 15px 2px rgba(199, 101, 165, 0.5);
+          box-shadow: 0 0 15px 2px rgba(199, 101, 165, 0.5);
+  background-color: #d7fbff;
+  color: #c765a5;
+}
+
+#prices .active h3 {
+  color: #c765a5;
+}
+
+#prices .active span {
+  color: #c765a5;
+}
+
+#prices a {
+  text-decoration: none;
+  color: #ffc8e4;
+}
+
+#prices a:hover {
+  font-weight: 600;
+}
+
+#prices .price-info {
+  margin: 30px 0 20px;
+}
+
+.team .jumbotron {
+  position: relative;
+  background-image: url("../img/team/team_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 60px 0;
+}
+
+.team .jumbotron .team-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.team .jumbotron h2 {
+  color: #fff;
+}
+
+.team .jumbotron .underline {
+  background-color: #fff;
+}
+
+.team .jumbotron .card {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.team .jumbotron .card img {
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #d7fbff;
+}
+
+.team .jumbotron .card .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team .jumbotron .card i {
+  color: #ffc8e4;
+  padding: 10px;
+}
+
+.team .jumbotron .card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.bottom-baner {
+  padding: 60px 0;
+  background-color: #ffc8e4;
+}
+
+.bottom-baner h2 {
+  font-family: 'Charmonman', sans-serif;
+  color: #c765a5;
+  font-weight: bold;
+}
+
+.contact .jumbotron {
+  position: relative;
+  padding: 60px 0;
+  background-image: url("../img/contactBG.jpg");
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+.contact .jumbotron .contact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 0, 7, 0.5);
+  z-index: -5;
+}
+
+.contact .jumbotron h2 {
+  color: #f9f9f9;
+  font-weight: bold;
+}
+
+.contact .jumbotron .underline {
+  background-color: #f9f9f9;
+}
+
+.contact .jumbotron .contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .jumbotron .contact-us .contact-item {
+  margin: 30px 0;
+}
+
+.contact .jumbotron .contact-us .contact-item h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact .jumbotron .contact-us .social-media {
+  font-size: 26px;
+}
+
+.contact .jumbotron .contact-us .social-media a {
+  padding: 10px;
+  color: #fff;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.contact .jumbotron .contact-us .social-media a:hover {
+  color: #c765a5;
+}
+
+footer {
+  background-color: #000;
+  color: #f9f9f9;
+}
+
+footer p i {
+  color: #c765a5;
+}
+
+@media (min-width: 375px) {
+  header .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  header .hero-text p {
+    font-size: 1rem;
+  }
+  #aboutus-hero .jumbotron h2 {
+    font-size: 2.2rem;
+  }
+  #aboutus-hero .jumbotron h3 {
+    font-size: 2rem;
+  }
+  #aboutus-hero .jumbotron p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 414px) {
+  #aboutus-hero .jumbotron {
+    padding: 80px 0;
+  }
+}
+/*# sourceMappingURL=custom.css.map */

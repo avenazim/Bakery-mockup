@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course 2 website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" media="screen and (min-width: 576px)" href="./css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="./css/large.css">
+    <script src="https://kit.fontawesome.com/aa2bb3f8ef.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><i class="fas fa-birthday-cake"></i><span class="white-text"> happy</span>Cake</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" href="#home">home</a>
+            <a class="nav-link" href="#about-us">o nas</a>
+            <a class="nav-link" href="#our-specials">nasze specjały</a>
+            <a class="nav-link" href="#portfolio">nasze wypieki</a>
+            <a class="nav-link" href="#prices">ceny</a>
+            <a class="nav-link" href="#team">nasz zespół</a>
+            <a class="nav-link" href="#contact">kontakt</a>
+          </div>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="hero-img">
+            <div class="hero-shadow"></div>
+            <div class="hero-text">
+                <h1 class="os-animation visibility" data-animation="fadeInUp" data-delay=".4s">Witajcie w Happy<span class="primary-text">Cake</span></h1>
+                <p class="os-animation visibility" data-animation="fadeInUp" data-delay=".5s">Dodaj życiu trochę słodyczy</p>
+                <a class="btn" id="scrollBtn" href="#about-us"><i class="fas fa-angle-double-down"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+      <section id="about-us" class="scroll-fix">
+        <div class="jumbo-hover"></div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="wrapper">
+                <h2>O nas</h2>
+                <div class="underline"></div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".1s">
+                        <p><i class="fas fa-birthday-cake"></i></p>
+                        <h3>świąteczne wypieki</h3>
+                        <p>Pieczemy ciasta na każde okazje!</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".2s">
+                        <p><i class="fas fa-cookie-bite"></i></p>
+                        <h3>codzienne słodkości</h3>
+                        <p>Wpadnij do nas na ciastko</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".3s">
+                        <p><i class="fas fa-coffee"></i></p>
+                        <h3>aromatyczna kawa</h3>
+                        <p>Zaproś znajomych na pyszną kawę</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".4s">
+                        <p><i class="fas fa-couch"></i></p>
+                        <h3>strefa relaksu</h3>
+                        <p>Poczytaj ksiażkę, odetchnij</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".5s">
+                        <p><i class="fas fa-paw"></i></p>
+                        <h3>animal friendly</h3>
+                        <p>Zwierzęta są u nas mile widziane</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".6s">
+                        <p><i class="fas fa-wifi"></i></p>
+                        <h3>bądź na bieżąco</h3>
+                        <p>Z naszym wifi nic Cię nie ominie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="our-specials" class="scroll-fix">
+          <div class="jumbotron jumbotron-fluid">
+              <div class="our-specials-shadow"></div>
+              <div class="wrapper">
+                <h2 class="os-animation visibility" data-animation="fadeIn">Nasze specjały</h2>
+                <div class="underline os-animation visibility" data-animation="fadeIn" data-delay=".1s"></div>
+                <div class="row">
+                    <div class="col-md-4 text-center our-specials-item os-animation visibility" data-animation="bounceInUp" data-delay=".3s">
+                        <h3>Torty</h3>
+                        <p><i class="fas fa-birthday-cake"></i></p>
+                        <p>Spersonalizowane</p>
+                    </div>
+                    <div class="col-md-4 text-center our-specials-item os-animation visibility" data-animation="bounceInUp" data-delay=".4s">
+                        <h3>Ciasta</h3>
+                        <p><i class="fas fa-hockey-puck"></i></p>
+                        <p>Jak u babci</p>
+                    </div>
+                    <div class="col-md-4 text-center our-specials-item os-animation visibility" data-animation="bounceInUp" data-delay=".5s">
+                        <h3>Ciasteczka</h3>
+                        <p><i class="fas fa-cookie-bite"></i></p>
+                        <p>Ciepłe i chrupiące</p>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </section>
+      <section id="portfolio" class="scroll-fix">
+        <div class="jumbotron jumbotron-fluid">
+            <h2>nasze wypieki</h2>
+            <div class="underline"></div>
+            <!-- PORTFOLIO MOBILE -->
+            <div class="wrapper">
+                <div class="card-deck d-lg-none">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card mb-5">
+                            <img src="./img/cupcake-small.jpg" class="card-img-top" alt="muffiny">
+                            <div class="card-body">
+                              <h5 class="card-title">Muffiny Owocowe</h5>
+                              <p class="card-text">Wykonane na życzenie Basi z okazji imienin jej siostry Marysi.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card mb-5">
+                            <img src="./img/cake-small.jpg" class="card-img-top" alt="tort">
+                            <div class="card-body">
+                              <h5 class="card-title">Tort Czekoladowy</h5>
+                              <p class="card-text">Upieczony by świętować urodziny Ireny</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card mb-5">
+                            <img src="./img/macaron-small.jpg" class="card-img-top" alt="makaroniki">
+                            <div class="card-body">
+                              <h5 class="card-title">Makaroniki Malinowe</h5>
+                              <p class="card-text">Makaroniki na specjalne życzenie naszej stałej klientki - Aliny</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <!-- PORTFOLIO DESKTOP -->
+          <div id="portfolio-carousel" class="carousel slide d-none d-lg-block" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+              <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/cupcake.jpg" alt="muffiny">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Muffiny Owocowe</h5>
+                  <p>Wykonane na życzenie Basi z okazji imienin jej siostry Marysi</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/cake.jpg" alt="tort">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Tort Czekoladowy</h5>
+                  <p>Upieczony by świętować urodziny Ireny</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/macaron.jpg" alt="makaroniki">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Makaroniki Malinowe</h5>
+                  <p>Makaroniki na specjalne życzenie naszej stałej klientki - Aliny</p>
+              </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#portfolio-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#portfolio-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </section>
+        <section id="prices" class="scroll-fix">
+          <div class="wrapper">
+            <h2>ceny</h2>
+            <div class="underline"></div>
+            <div class="container">
+              <div class="row price-wrap text-center justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                  <div data-aos="flip-left" data-aos-delay="400">
+                    <div class="price-box">
+                      <h3>ciasta</h3>
+                      <hr>
+                      <p class="price-tag">od <span>20zł</span> za sztukę</p>
+                      <button class="btn btn-secondary">zamów</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div div data-aos="flip-left" data-aos-delay="500">
+                    <div class="price-box active">
+                      <h3>muffiny</h3>
+                      <hr>
+                      <p class="price-tag">od <span>3zł</span> za sztukę</p>
+                      <button class="btn btn-secondary">zamów</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div div data-aos="flip-left" data-aos-delay="600">
+                    <div class="price-box">
+                      <h3>inne wypieki</h3>
+                      <hr>
+                      <p class="price-tag">zależnie od zamówienia</p>
+                      <button class="btn btn-secondary">zamów</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <p class="price-info">Wybierz kategorię wypieku, który chcesz zamówić, lub <a href="#contact">skontaktuj się z nami</a></p>
+                <p class="text-muted">Wykonujemy również <i>niestandardowe</i> wypieki na życzenie klientów</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="team" class="team scroll-fix">
+          <div class="jumbotron">
+            <div class="team-shadow"></div>
+            <h2>nasz zespół</h2>
+            <div class="underline"></div>
+            <div class="container">
+              <div class="card-group team-carousel">
+                <div class="card mx-3">
+                  <img class="card-img-top" src="./img/team/team-member-1.png" alt="pracownica Monika">
+                  <div class="card-body">
+                    <h5 class="card-title">Monika</h5>
+                  </div>
+                  <div class="card-footer d-flex justify-content-around">
+                    <a href="a"><i class="fab fa-facebook-f"></i></a>
+                    <a href="a"><i class="fab fa-instagram"></i></a>
+                    <a href="a"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="card mx-3">
+                  <img class="card-img-top" src="./img/team/team-member-2.png" alt="pracownica Ola">
+                  <div class="card-body">
+                    <h5 class="card-title">Ola</h5>
+                  </div>
+                  <div class="card-footer d-flex justify-content-around">
+                    <a href="a"><i class="fab fa-facebook-f"></i></a>
+                    <a href="a"><i class="fab fa-instagram"></i></a>
+                    <a href="a"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="card mx-3">
+                  <img class="card-img-top" src="./img/team/team-member-3.png" alt="pracownica Marcelina">
+                  <div class="card-body">
+                    <h5 class="card-title">Marcelina</h5>
+                  </div>
+                  <div class="card-footer d-flex justify-content-around">
+                    <a href="a"><i class="fab fa-facebook-f"></i></a>
+                    <a href="a"><i class="fab fa-instagram"></i></a>
+                    <a href="a"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bottom-baner">
+          <h2 data-aos="fade-up" data-aos-delay="400">Osłodź swoje życie, odwiedź nas już dziś!</h2>
+        </section>
+        <section id="contact" class="contact scroll-fix">
+          <div class="jumbotron">
+            <div class="contact-shadow"></div>
+            <h2>kontakt</h2>
+            <div class="underline"></div>
+            <div class="container">
+              <div class="row text-center contact-us">
+                <div class="col-sm-6 col-lg-4 contact-item order-1">
+                  <h3>Cukiernia Lewobrzeże</h3>
+                  <p>ul. Jednorożcowa 1</p>
+                  <p>00-00 Szczecin</p>
+                  <p>+48 123 123 123</p>
+                  <p>mail@mail.pl</p>
+                </div>
+                <div class="col-lg-4 social-media contact-item order-0 order-lg-1">
+                  <h3>social media</h3>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-6 col-lg-4 contact-item order-1">
+                  <h3>Cukiernia Prawobrzeże</h3>
+                  <p>ul. Tęczowa 2</p>
+                  <p>00-00 Szczecin</p>
+                  <p>+48 123 123 123</p>
+                  <p>mail@mail.pl</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer text-center py-4">
+          <p class="mb-0">&copy;2021 | Made with <i class="fa fa-heart"></i> by <span class="fw-bold">Ewa Nazim</span></p>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/jquery.waypoints.min"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+
+        startEvent: 'DOMContentLoaded',
+        offset: 200,
+        once: true
+
+      });
+    </script>
+
+    
+    <script src="./js/animation.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slicksettings.js"></script>
+
+</body>
+</html>

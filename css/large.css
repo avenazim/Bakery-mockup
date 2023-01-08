@@ -1,0 +1,104 @@
+nav .navbar-toggler {
+  outline: none;
+  z-index: 10;
+}
+
+nav .navbar-collapse {
+  -webkit-transform: none;
+          transform: none;
+}
+
+nav .navbar-collapse.show {
+  -webkit-transform: none;
+          transform: none;
+}
+
+nav .navbar-collapse.collapse {
+  position: relative;
+  background-color: unset;
+  padding: unset;
+  height: auto;
+  max-width: 100%;
+}
+
+#portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+#portfolio .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#portfolio .carousel-item .carousel-indicated {
+  padding-bottom: 20px;
+}
+
+#portfolio .carousel-item .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#prices .price-info {
+  font-size: 1.15rem;
+}
+
+@media (min-width: 1200px) {
+  nav a {
+    color: #fff;
+  }
+  header {
+    color: #fff;
+  }
+  header .hero-img {
+    background-image: url("../img/cupcakeBG2.png");
+    background-position: left center;
+    background-attachment: fixed;
+  }
+  header .hero-shadow {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  header .btn {
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  .our-specials .jumbotron {
+    padding: 120px 0;
+  }
+}
+
+@media (min-width: 1500px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  nav a {
+    color: #d7fbff;
+  }
+  header {
+    color: #ffc8e4;
+    font-family: 'Charmonman', cursive;
+  }
+  header .hero-text {
+    position: absolute;
+    right: 5%;
+    max-width: 50%;
+  }
+  header .hero-text h1 {
+    text-transform: none;
+  }
+  header .hero-shadow {
+    background-color: unset;
+  }
+  header .btn {
+    color: #c765a5;
+    border: 2px solid #c765a5;
+  }
+}
+/*# sourceMappingURL=large.css.map */

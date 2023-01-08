@@ -1,0 +1,12 @@
+header .hero-text h1 {
+  font-size: 3rem;
+}
+
+header .hero-text p {
+  font-size: 1.2rem;
+}
+
+#portfolio .card-deck .card {
+  height: 100%;
+}
+/*# sourceMappingURL=medium.css.map */
